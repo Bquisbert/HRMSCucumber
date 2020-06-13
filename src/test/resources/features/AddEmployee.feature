@@ -1,6 +1,6 @@
 Feature: Add employee
 
-Background: 
+  Background: 
     Given user is logged with valid admin credentials
     And user navigates to AddEmployeePage
 
@@ -35,9 +35,9 @@ Background:
     Examples: 
       | FirstName | MiddleName | LastName  |
       | James     | J          | Smith     |
-      | Faisal    | F          | Sakhi     |
+      | teteeh    | F          | prince    |
       | Sohil     | S          | Instuctor |
-      | Yunus     | Emre       | Yakut     |
+      | Mahady    | R          | Rahynd    |
 
   #adding multiple employees using Cucumber DataTable
   @inProgress
@@ -46,3 +46,8 @@ Background:
       | FirstName | MiddleName | LastName |
       | John      | J          | Doe      |
       | Jane      | J          | Smith    |
+      
+      @excel
+      Scenario: Adding multiple employees from excel
+      When user enters employee data from "EmployeeLoginCredentials" excel sheet then employee is added
+      

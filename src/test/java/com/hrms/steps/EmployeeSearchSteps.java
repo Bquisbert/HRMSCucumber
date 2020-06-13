@@ -12,7 +12,7 @@ public class EmployeeSearchSteps extends CommonMethods {
 
 	@Given("user is logged with valid admin credentials")
 	public void user_is_logged_with_valid_admin_credentials() {
-	  sendText(login.username, ConfigsReader.getProperty("username"));
+	  sendText(login.username, ConfigsReader.getProperty("sername"));
 	  sendText(login.password, ConfigsReader.getProperty("password"));
 	  click(login.loginBtn);
 	}
@@ -25,9 +25,9 @@ public class EmployeeSearchSteps extends CommonMethods {
 		jsClick(dashboard.empListPage);
 	}
 
-	@When("user enters valid employee id")
-	public void user_enters_valid_employee_id() {
-		sendText(viewEmp.empID, "10079");
+	@When("user enters valid employee id {string}")
+	public void user_enters_valid_employee_id(String empId) {
+		sendText(viewEmp.empID, empId);
 	}
 
 	@When("click on search button")

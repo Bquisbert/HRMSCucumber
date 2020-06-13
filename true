@@ -1,6 +1,6 @@
-[1591552772.038][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 47916
-[1591552772.038][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-[1591552772.527][INFO]: [3a0631d30af2a745b29dbfbeac121053] COMMAND InitSession {
+[1592062368.445][INFO]: Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 4707
+[1592062368.445][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1592062369.129][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -18,7 +18,7 @@
       }
    }
 }
-[1591552772.530][INFO]: Populating Preferences file: {
+[1592062369.131][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -71,7 +71,7 @@
       "enabled": false
    }
 }
-[1591552772.531][INFO]: Populating Local State file: {
+[1592062369.136][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -81,10 +81,103 @@
       }
    }
 }
-[1591552772.539][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\brian\AppData\Local\Temp\scoped_dir23356_1536287501\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\brian\AppData\Local\Temp\scoped_dir23356_1197395076" data:,
-[1591552773.033][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1591552777.026][WARNING]: Timed out connecting to Chrome, retrying...
-[1591552777.026][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1591552785.044][INFO]: [3a0631d30af2a745b29dbfbeac121053] RESPONSE InitSession ERROR session not created
-from chrome not reachable
-  (Session info: chrome=83.0.4103.61)
+[1592062369.167][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --load-extension="C:\Users\brian\AppData\Local\Temp\scoped_dir9680_900562644\internal" --log-level=0 --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\brian\AppData\Local\Temp\scoped_dir9680_1376596645" data:,
+[1592062369.687][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1592062371.701][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "83.0.4103.97",
+      "chrome": {
+         "chromedriverVersion": "83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416})",
+         "userDataDir": "C:\\Users\\brian\\AppData\\Local\\Temp\\scoped_dir9680_1376596645"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:58181"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "dd191847751d8c28690416e40041e14c"
+}
+[1592062371.733][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND SetTimeouts {
+   "implicit": 15000
+}
+[1592062371.733][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE SetTimeouts
+[1592062371.736][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND Navigate {
+   "url": "http://166.62.36.207/humanresources/symfony/web/index"
+}
+[1592062371.737][INFO]: Waiting for pending navigations...
+[1592062371.739][INFO]: Done waiting for pending navigations. Status: ok
+[1592062372.108][INFO]: Waiting for pending navigations...
+[1592062373.167][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.167][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE Navigate
+[1592062373.200][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#txtUsername"
+}
+[1592062373.200][INFO]: Waiting for pending navigations...
+[1592062373.200][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.207][INFO]: Waiting for pending navigations...
+[1592062373.207][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.208][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "ae66eada-45b4-42dc-b5a4-8e95d376652f"
+}
+[1592062373.214][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND ClearElement {
+   "id": "ae66eada-45b4-42dc-b5a4-8e95d376652f"
+}
+[1592062373.214][INFO]: Waiting for pending navigations...
+[1592062373.214][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.228][INFO]: 
+	=== NOTE: ===
+	The Clear command in ChromeDriver 2.43 and above
+	has been updated to conform to the current standard,
+	including raising blur event after clearing.
+
+[1592062373.235][INFO]: Waiting for pending navigations...
+[1592062373.236][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.236][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE ClearElement
+[1592062373.240][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND FindElement {
+   "using": "css selector",
+   "value": "#txtUsername"
+}
+[1592062373.240][INFO]: Waiting for pending navigations...
+[1592062373.240][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.244][INFO]: Waiting for pending navigations...
+[1592062373.244][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.244][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE FindElement {
+   "element-6066-11e4-a52e-4f735466cecf": "ae66eada-45b4-42dc-b5a4-8e95d376652f"
+}
+[1592062373.250][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND Screenshot {
+
+}
+[1592062373.250][INFO]: Waiting for pending navigations...
+[1592062373.250][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.567][INFO]: Waiting for pending navigations...
+[1592062373.568][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.568][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABQ8AAANLCAYAAADvoGvvAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3VlwnNeZp/nny0xsJEEsBPd9EbiJi7hIpCRTtiVbkqtky9Uud1V5prvcPeG6m4vpy46OqJiriairqZkIR0dXx9hR7XKH1dVl0ZItWxtFa6EoivtOggtIEPu+A..."
+[1592062373.599][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND Screenshot {
+
+}
+[1592062373.600][INFO]: Waiting for pending navigations...
+[1592062373.601][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.874][INFO]: Waiting for pending navigations...
+[1592062373.875][INFO]: Done waiting for pending navigations. Status: ok
+[1592062373.875][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE Screenshot "iVBORw0KGgoAAAANSUhEUgAABQ8AAANLCAYAAADvoGvvAAAAAXNSR0IArs4c6QAAIABJREFUeJzs3VlwnNeZp/nny0xsJEEsBPd9EbiJi7hIpCRTtiVbkqtky9Uud1V5prvcPeG6m4vpy46OqJiriairqZkIR0dXx9hR7XKH1dVl0ZItWxtFa6EoivtOggtIEPu+A..."
+[1592062373.896][INFO]: [dd191847751d8c28690416e40041e14c] COMMAND Quit {
+
+}
+[1592062373.937][INFO]: [dd191847751d8c28690416e40041e14c] RESPONSE Quit
