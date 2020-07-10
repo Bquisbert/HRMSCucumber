@@ -1,5 +1,7 @@
 package com.hrms.steps;
 
+import org.junit.Assert;
+
 import com.hrms.utils.CommonMethods;
 import com.hrms.utils.ConfigsReader;
 
@@ -7,12 +9,13 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+
 public class EmployeeSearchSteps extends CommonMethods {
 
 
 	@Given("user is logged with valid admin credentials")
 	public void user_is_logged_with_valid_admin_credentials() {
-	  sendText(login.username, ConfigsReader.getProperty("sername"));
+	  sendText(login.username, ConfigsReader.getProperty("username"));
 	  sendText(login.password, ConfigsReader.getProperty("password"));
 	  click(login.loginBtn);
 	}
@@ -46,5 +49,23 @@ public class EmployeeSearchSteps extends CommonMethods {
 		
 	}
 
+	@Then("verify table is displayed")
+	public void verify_table_is_displayed() {
+		Assert.assertEquals(true, viewEmp.isTableDisplayed());
+	}
 
+	@Then("get first name from table")
+	public void get_first_name_from_table() {
+		System.out.println(viewEmp.getFirstNameFromTable());
+	}
+	
+	
+	
+	@Then("verify first name from ui against db")
+	public void verify_first_name_from_ui_against_db() {
+		Assert.assertEquals(DBSteps.dbData, viewEmp.getFirstNameFromTable());
+	}
+	
+	
+	
 }
